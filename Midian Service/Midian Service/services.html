@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services | Midian Tech Ltd</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <section class="services-section">
+    <h1 class="section-title">Our Services</h1>
+    <div class="services-grid">
+
+      <!-- Sample Service -->
+      <div class="service-card">
+        <img src="images/online-docs.jpg" alt="Online Document Processing" />
+        <h3>Online Document Processing</h3>
+        <p>KRA, HELB, NSSF, NHIF – fast and accurate document assistance.</p>
+        <button onclick="openModal('Online Document Processing')">Get Service</button>
+      </div>
+
+      <div class="service-card">
+        <img src="images/cv-design.jpg" alt="CV Design and Typing" />
+        <h3>Smart CV Design & Typing</h3>
+        <p>Professional CVs that stand out. Modern design and flawless typing.</p>
+        <button onclick="openModal('CV Design & Typing')">Get Service</button>
+      </div>
+
+      <div class="service-card">
+        <img src="images/web-dev.jpg" alt="Web Design and Development" />
+        <h3>Web Design & Development</h3>
+        <p>Responsive, modern websites tailored to your brand and goals.</p>
+        <button onclick="openModal('Web Design & Development')">Get Service</button>
+      </div>
+
+      <div class="service-card">
+        <img src="images/printing.jpg" alt="Printing and Scanning" />
+        <h3>Printing, Scanning & Email</h3>
+        <p>High-quality printing, accurate scanning, and quick email dispatch.</p>
+        <button onclick="openModal('Printing & Scanning')">Get Service</button>
+      </div>
+
+      <div class="service-card">
+        <img src="images/academic.jpg" alt="Academic Support" />
+        <h3>Academic Support</h3>
+        <p>Research, typesetting, formatting – reliable academic assistance.</p>
+        <button onclick="openModal('Academic Support')">Get Service</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle">Request Service</h2>
+      <form id="requestForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Write your request..." rows="4" required></textarea>
+        <input type="hidden" id="selectedService" />
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
